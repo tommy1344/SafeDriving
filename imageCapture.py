@@ -31,3 +31,10 @@ for label in labels:
                 break
 cap.release()
 cv2.destroyAllWindows
+
+# USE THIS TO LABEL THE IMAGES ACCORDINGLY
+# !cd labelImg
+# !python labelImg.py
+
+# use this to train the data when all is done
+# cd yolov5 && python train.py --img 320 --batch 16 --epochs 250 --data dataset.yml --weights yolov5s.pt --workers 2
