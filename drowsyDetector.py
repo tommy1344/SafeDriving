@@ -6,7 +6,7 @@ import uuid
 import os
 import time
 
-model = torch.hub.load('ultralytics/yolov5','yolov5s')
+model = torch.hub.load('ultralytics/yolov5','custom',path= 'yolov5/runs/train/exp4/weights/last.pt',force_reload=True)
 
 
 # accesses the webcam, reads the frames, closes if q is pressed
